@@ -10,13 +10,19 @@
             background-color: black;
             background-image: url("imagens/img4.jpeg");
             background-position: center top;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
+            background-attachment: fixed;
+            /*
+            Shorthand - background
+            color> image > position > repeat > [size - pode ser que não funcione(mas a w3c aceita)] > attachment
+            
+            */
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
