@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+ /* declarações gerais */
+ * {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+}
+/* declarações retrato */
+@media screen and (orientation:portrait){
+    body {
+        background-color: aquamarine;
+    }
+}
+
+/* declarações paisagem*/
+@media screen and (orientation:landscape){
+    body{
+        background-color: aqua;
+    }
+}
