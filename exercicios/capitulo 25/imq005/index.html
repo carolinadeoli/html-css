@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    
+    
+    
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu </span>
@@ -39,12 +43,22 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quam nostrum cupiditate est reiciendis ipsum porro possimus tempore eius, necessitatibus atque reprehenderit fugit expedita numquam aliquid enim ad, animi molestiae.
             </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore laborum sequi molestias, ullam, animi corrupti aperiam odio necessitatibus delectus, sint accusamus facere veritatis dignissimos perferendis minima? Saepe numquam tempora excepturi!
+            </p>
         </article>
     </main>
     <script>
         function clickMenu(){
             if(itens.style.display=="block"){
                 itens.style.display ="none"
+            } else {
+                itens.style.display ="block"
+            }
+        }
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = "block"    
             } else {
                 itens.style.display ="block"
             }
